@@ -8,7 +8,7 @@ import * as apigwv2Integrations from "@aws-cdk/aws-apigatewayv2-integrations-alp
 import * as secretsmanager from "aws-cdk-lib/aws-secretsmanager";
 
 interface CdkDemoBotStackProps extends cdk.StackProps {
-  scope?: string;
+  scope?: string | undefined;
 }
 
 export class CdkWorkshopStack extends cdk.Stack {
